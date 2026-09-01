@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>संपर्क करें — Prayag Educational Research Institute</title>
+<meta name="description" content="Prayag Educational Research Institute se sampark kariye — phone, WhatsApp." />
+<link rel="icon" href="assets/logo-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@500;600;700&family=Hind:wght@400;500;600&family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a class="brand" href="index.html">
+      <img src="assets/logo-icon.png" alt="Prayag Educational Research Institute logo" />
+      <span class="brand__text">
+        <strong>Prayag Educational</strong>
+        <span>Research Institute</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu kholein" aria-expanded="false"><span></span></button>
+    <div class="nav-links">
+      <a href="index.html">होम</a>
+      <a href="book.html?id=paper1-accounting">अध्याय · Chapters</a>
+      <a href="question-bank.html">प्रश्न बैंक</a>
+      <a href="about.html">हमारे बारे में</a>
+      <a href="contact.html" class="is-active">संपर्क करें</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Get in Touch</p>
+      <h1>संपर्क करें <span class="en">Contact Us</span></h1>
+      <p style="max-width:60ch; color:var(--ink-600);">
+        Koi sawaal, sujhaav ya kisi chapter me galti dikhe to humein zaroor bataiye — hum
+        jaldi se jaldi jawaab denge.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top:16px;">
+    <div class="container contact-grid">
+      <div>
+        <div class="contact-card" data-reveal>
+          <div class="contact-card__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 5.5C4 4.67 4.67 4 5.5 4h2.6c.5 0 .93.34 1.05.83l1 4a1.1 1.1 0 0 1-.32 1.1L7.9 11.7a13.7 13.7 0 0 0 4.4 4.4l1.77-1.93c.3-.3.73-.4 1.1-.32l4 1c.5.12.83.55.83 1.05v2.6c0 .83-.67 1.5-1.5 1.5C10.4 20 4 13.6 4 5.5Z" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <div>
+            <h3>फ़ोन नंबर</h3>
+            <a class="link" href="tel:+917007920430">+91 70079 20430</a>
+          </div>
+        </div>
+        <div class="contact-card" data-reveal>
+          <div class="contact-card__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3C7.03 3 3 6.9 3 11.7c0 1.9.63 3.66 1.7 5.1L4 21l4.36-1.16A9.6 9.6 0 0 0 12 20.4c4.97 0 9-3.9 9-8.7S16.97 3 12 3Z" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <div>
+            <h3>WhatsApp</h3>
+            <a class="link" href="https://wa.me/917007920430" target="_blank" rel="noopener">70079 20430 पर मैसेज करें</a>
+          </div>
+        </div>
+        <div class="contact-card" data-reveal>
+          <div class="contact-card__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="5" width="17" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="m4.5 6.5 7.5 6 7.5-6" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <div>
+            <h3>संस्था</h3>
+            <p>Prayag Educational Research Institute</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" data-reveal onsubmit="return false;">
+        <div class="field">
+          <label for="name">आपका नाम · Name</label>
+          <input id="name" name="name" type="text" placeholder="अपना नाम लिखें" required />
+        </div>
+        <div class="field">
+          <label for="phone">फ़ोन / व्हाट्सएप नंबर</label>
+          <input id="phone" name="phone" type="tel" placeholder="10 अंकों का नंबर" required />
+        </div>
+        <div class="field">
+          <label for="message">संदेश · Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="अपना सवाल या सुझाव यहाँ लिखें" required></textarea>
+        </div>
+        <button class="btn btn--primary" type="submit" onclick="sendToWhatsApp(event)">WhatsApp पर भेजें</button>
+        <p class="form-note">Yeh button aapko WhatsApp par le jaayega jahan aap seedha message bhej sakte hain.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/logo-icon.png" alt="Prayag Educational Research Institute logo" />
+          <div>
+            <strong>Prayag Educational</strong>
+            <span>Research Institute</span>
+          </div>
+        </div>
+        <p>Hindi medium CA Foundation, Intermediate (IPCC) aur Final students ke liye free, chapter-wise study material.</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul>
+          <li><a href="index.html">होम</a></li>
+          <li><a href="book.html?id=paper1-accounting">अध्याय · Chapters</a></li>
+          <li><a href="about.html">हमारे बारे में</a></li>
+          <li><a href="contact.html">संपर्क करें</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+917007920430">+91 70079 20430</a></li>
+          <li><a href="https://wa.me/917007920430" target="_blank" rel="noopener">WhatsApp पर लिखें</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Prayag Educational Research Institute. All rights reserved.</span>
+      <span>Author: Vishnu Prabhakar Upadhayay</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  function sendToWhatsApp(e) {
+    e.preventDefault();
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const message = document.getElementById("message").value.trim();
+    if (!name || !phone || !message) return;
+    const text = `Naam: ${name}%0APhone: ${phone}%0AMessage: ${message}`;
+    window.open(`https://wa.me/917007920430?text=${text}`, "_blank");
+  }
+</script>
+</body>
+</html>
